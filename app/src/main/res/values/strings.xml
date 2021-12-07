@@ -1,0 +1,61 @@
+<resources>
+    <string name="facharbeit_text">Ruch to zdrowie!</string>
+
+    <string name="app_name">Sport Activity</string>
+    <string name="title_pedometer">Licznik kroków</string>
+    <string name="title_acceleration">Akcelerometr</string>
+
+    <string name="pedometer">Licznik kroków</string>
+    <string name="number_of_steps">Liczba kroków:</string>
+    <string name="pedometer_running">Liczenie kroków</string>
+    <string name="pedometer_not_running">Liczenie kroków wstrzymane</string>
+    <string name="type_of_step">Rodzaj aktywności:</string>
+    <string name="duration_of_step">Czas trwania:</string>
+
+    <string name="acitvate_pedometer">Liczenie kroków</string>
+    <string name="disable_pedometer">Wstrzymaj liczenie kroków</string>
+
+    <string name="results">Wyniki</string>
+    <string name="of_the_last_measurement">Ostatni pomiar</string>
+    <string name="total_steps">Kroki razem</string>
+    <string name="from_that">Dane szczegółowe…</string>
+    <string name="walking_steps">Spacer:</string>
+    <string name="jogging_steps">Jogging</string>
+    <string name="running_steps">Bieganie:</string>
+    <string name="total_distance">Całkowity dystans:</string>
+    <string name="average_speed">Srednia prędkość:</string>
+    <string name="average_frequency">Częstotliwość kroków:</string>
+    <string name="burned_calories">Spalone kalorie:</string>
+    <string name="moving_time">Czas ruchu:</string>
+
+    <string name="walking">Spacer</string>
+    <string name="jogging">Jogging</string>
+    <string name="running">Bieg</string>
+
+    <string name="live_data">Odczyty na żywo</string>
+    <string name="graph">Wykres</string>
+    <string name="accel_unit" translatable="false">m/s²</string>
+    <string name="milliampere_unit" translatable="false">mA</string>
+    <string name="details">Detale</string>
+
+    <string name="name">Nazwa:</string>
+    <string name="manufacturer">Producent:</string>
+    <string name="version">Wersja:</string>
+    <string name="energy">Energia:</string>
+    <string name="resolution">Rezolucja:</string>
+    <string name="max_range">max. zasięg:</string>
+    <string name="min_range">min. zasięg:</string>
+    <string name="accuracy">Dokładność:</string>
+    <string name="delay">Opóźnienie:</string>
+    <string name="text1">Użyj biometrii do uruchomienia aplikacji</string>
+    <string name="todo">TODO</string>
+    <string name="text2">Odblokuj</string>
+
+    <string name="button_1">Licznik kroków</string>
+    <string name="button_2">Pokaż na mapie</string>
+    <string name="button_3">Pokaż statystyki</string>
+    <string name="button_4">Spalone kalorie</string>
+    <string name="button_5">Rozpocznij trening</string>
+
+
+</resources>
