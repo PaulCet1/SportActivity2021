@@ -56,7 +56,7 @@ public class LicznikkrokowFragment extends Fragment implements SensorEventListen
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.schrittzaehler_fragment, container, false);
+        View view = inflater.inflate(R.layout.licznikkrokow_fragment, container, false);
 
         cardViewToggleStepCounting = view.findViewById(R.id.btn_pedometer_toggle_tracking);
         cardViewToggleStepCounting.setOnClickListener(new View.OnClickListener() {

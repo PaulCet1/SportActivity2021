@@ -10,16 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.sportactivity.example.biometriclock"
-            android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:name=".SplashScreenActivity"
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
-        <activity android:name="com.sportactivity.example.MainActivity" />
-        <activity android:name="com.sportactivity.example.menu_activity" />
+        <activity
+            android:name=".biometriclock"
+            android:label="@string/app_name"/>
+
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".menu_activity" />
     </application>
 
 </manifest>

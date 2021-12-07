@@ -9,11 +9,11 @@
         android:id="@+id/navigation_schrittzaehler"
         android:name="com.sportactivity.example.ui.LicznikKrokow.LicznikkrokowFragment"
         android:label="@string/title_pedometer"
-        tools:layout="@layout/schrittzaehler_fragment" />
+        tools:layout="@layout/licznikkrokow_fragment" />
 
     <fragment
         android:id="@+id/navigation_beschleunigungssensor"
         android:name="com.sportactivity.example.ui.Akcelerometr.AkcelerometrSensorFragment"
         android:label="@string/title_acceleration"
-        tools:layout="@layout/beschleunigungs_sensor_fragment" />
+        tools:layout="@layout/akcelerometr_sensor_fragment" />
 </navigation>

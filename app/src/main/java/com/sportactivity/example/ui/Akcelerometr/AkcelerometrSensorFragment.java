@@ -59,7 +59,7 @@ public class AkcelerometrSensorFragment extends Fragment implements SensorEventL
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.beschleunigungs_sensor_fragment, container, false);
+        View view = inflater.inflate(R.layout.akcelerometr_sensor_fragment, container, false);
 
         textview_accel_live_data_x = view.findViewById(R.id.textview_accel_live_data_x);
         textview_accel_live_data_y = view.findViewById(R.id.textview_accel_live_data_y);
