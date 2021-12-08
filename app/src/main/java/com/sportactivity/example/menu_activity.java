@@ -97,7 +97,7 @@ public class menu_activity extends AppCompatActivity {
     }
 
     public void openmap(){
-        Intent intentmap = new Intent(this, biometriclock.class);
+        Intent intentmap = new Intent(this, mapactivity.class);
         startActivity(intentmap);
     }
 
