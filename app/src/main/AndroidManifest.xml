@@ -4,6 +4,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
 
     <application
         android:allowBackup="true"
@@ -24,10 +25,16 @@
         <activity
             android:name=".biometriclock"
             android:label="@string/app_name"/>
-            <activity android:name=".mapactivity" />
+            <activity android:name=".mapactivity"
+                android:exported="false"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
 
-        <activity android:name=".MainActivity" />
-        <activity android:name=".menu_activity" />
+        <activity android:name=".MainActivity"
+            android:exported="false"/>
+        <activity android:name=".menu_activity"
+            android:exported="false"/>
     </application>
 
 </manifest>

@@ -69,7 +69,7 @@ public class biometriclock extends AppCompatActivity {
 
                 Toast.makeText(getApplicationContext(), "Autoryzacja przebiegła pomyślnie!", Toast.LENGTH_SHORT).show();
 
-                openactivity3();
+                openmenu();
 
             }
 
@@ -93,7 +93,7 @@ public class biometriclock extends AppCompatActivity {
 
 
 
-    public void openactivity3(){
+    public void openmenu(){
         Intent intent3 = new Intent(this, menu_activity.class);
         startActivity(intent3);
     }

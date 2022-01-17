@@ -29,11 +29,11 @@ public class AkcelerometrSensorFragment extends Fragment implements SensorEventL
 
     private static final String TAG = "AccelSensorFragment";
 
-    // Live-Data Bereich:
+
     private TextView textview_accel_live_data_x, textview_accel_live_data_y, textview_accel_live_data_z,
                     textview_accel_live_data_accuracy, textview_accel_live_data_delay;
 
-    // Details Bereich:
+
     private TextView textview_accel_details_name, textview_accel_details_manufacturer,
             textview_accel_details_version, textview_accel_details_energy,
             textview_accel_details_resolution, textview_accel_details_max_range;
@@ -101,9 +101,9 @@ public class AkcelerometrSensorFragment extends Fragment implements SensorEventL
         mViewModel = ViewModelProviders.of(this).get(AkcelerometrSensorViewModel.class);
 
 
-        // eine Instanz des SensorManagers
+
         sensorManager = (SensorManager) getActivity().getSystemService(Context.SENSOR_SERVICE);
-        // der Beschleunigungssensor wird über den SensorManager instanziert
+
         if(sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER) != null) {
             accelerationSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         }
@@ -124,9 +124,7 @@ public class AkcelerometrSensorFragment extends Fragment implements SensorEventL
         super.onStop();
     }
 
-    //------------------------------------------------------------------
-    //              Sensor (Live Data) - Bereich
-    //------------------------------------------------------------------
+
 
     private void registerListener(){
         sensorManager.registerListener(this, accelerationSensor, sensorDelay);
@@ -141,7 +139,7 @@ public class AkcelerometrSensorFragment extends Fragment implements SensorEventL
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
-        // wenn sich die Genauigkeit des Beschleunigungssensors ändert
+
         if (sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
             this.updateAccuracy(accuracy);
         }
@@ -149,15 +147,14 @@ public class AkcelerometrSensorFragment extends Fragment implements SensorEventL
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        // nur wenn der Beschleunigungssensor neue Werte liefert
+
         if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
             this.updateAccelerationData(event.timestamp, event.values[0], event.values[1], event.values[2]);
         }
     }
 
     private void updateAccelerationData(long timestamp, float x, float y, float z){
-        //String message = "Neue Messwerte (" + timestamp + "): " + x + " , " + y + " , " + z;
-        //Log.d(TAG, message);
+
 
         String x_value = x + " " + getResources().getString(R.string.accel_unit);
         String y_value = y + " " + getResources().getString(R.string.accel_unit);
@@ -223,9 +220,7 @@ public class AkcelerometrSensorFragment extends Fragment implements SensorEventL
         textview_accel_live_data_accuracy.setText(String.valueOf(accuracy));
     }
 
-    //------------------------------------------------------------------
-    //              Graph - Bereich
-    //------------------------------------------------------------------
+
 
     private void initGraphView(){
         accelerationGraph.getViewport().setScrollable(false);
@@ -255,9 +250,7 @@ public class AkcelerometrSensorFragment extends Fragment implements SensorEventL
         accelerationGraph.removeAllSeries();
     }
 
-    //------------------------------------------------------------------
-    //              Details
-    //------------------------------------------------------------------
+
 
     private void updateAccelDetails(){
         textview_accel_details_name.setText(accelerationSensor.getName());

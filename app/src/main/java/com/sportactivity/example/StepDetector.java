@@ -86,7 +86,7 @@ public class StepDetector {
                 aboveWalkingThresholdList.add(calculatedDataSet);
                 wasAboveThreshold = true;
             } else {
-                    // erst, wenn es einen Wert unter WALKINGTHRESHOLD gibt
+
                 if(wasAboveThreshold && aboveWalkingThresholdList.size() > 0){
                     Collections.sort(aboveWalkingThresholdList, new AccelerationDataSorter());
                     highPointList.add(aboveWalkingThresholdList.get(aboveWalkingThresholdList.size() - 1));

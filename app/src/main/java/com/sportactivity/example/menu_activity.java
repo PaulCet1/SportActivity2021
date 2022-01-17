@@ -24,9 +24,7 @@ public class menu_activity extends AppCompatActivity {
 
         Button licznik_krokow = findViewById(R.id.licznik_krokow);
         Button maps = findViewById(R.id.button_mapa);
-        Button stats = findViewById(R.id.button_stats);
-        Button burned_calories = findViewById(R.id.burned_calories);
-        Button opentraining = findViewById(R.id.opentraining);
+
 
         FloatingActionButton set1 = findViewById(R.id.sett_1);
         FloatingActionButton set2 = findViewById(R.id.sett_2);
@@ -45,11 +43,7 @@ public class menu_activity extends AppCompatActivity {
 
 
         });
-        opentraining.setOnClickListener(v -> {Toast.makeText(getApplicationContext(), "Mapa!", Toast.LENGTH_SHORT).show();
 
-            opentraining();
-
-        });
 
         maps.setOnClickListener(v -> {Toast.makeText(getApplicationContext(), "Mapa!", Toast.LENGTH_SHORT).show();
 
@@ -57,9 +51,7 @@ public class menu_activity extends AppCompatActivity {
 
         });
 
-        stats.setOnClickListener(v -> Toast.makeText(getApplicationContext(), "Funkcja statystyki nie jest jeszcze wspierana!", Toast.LENGTH_SHORT).show());
 
-        burned_calories.setOnClickListener(v -> Toast.makeText(getApplicationContext(), "Funkcja spalone kalorie nie jest jeszcze wspierana!", Toast.LENGTH_SHORT).show());
         set1.setOnClickListener(v -> {
             Toast.makeText(getApplicationContext(), "Funkcja telefon", Toast.LENGTH_SHORT).show();
             opentelephone();
